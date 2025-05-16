@@ -1,268 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Devesh Rattan - DevOps Engineer Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0; padding: 0;
-      background: #f9f9f9;
-      color: #333;
-      animation: fadeInBody 1s ease forwards;
-    }
-    @keyframes fadeInBody {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: #fff;
-      padding: 2rem 3rem;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-      animation: fadeInContainer 1.5s ease forwards;
-    }
-    @keyframes fadeInContainer {
-      from {transform: translateY(20px); opacity: 0;}
-      to {transform: translateY(0); opacity: 1;}
-    }
-    img.profile-pic {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: contain;
-      background: #fff;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    img.profile-pic:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
-      transition: color 0.3s ease;
-      cursor: default;
-    }
-    h1 {
-      font-size: 2.4rem;
-      margin-bottom: 0.25rem;
-      text-align: center;
-    }
-    h2 {
-      border-bottom: 2px solid #007acc;
-      padding-bottom: 0.2rem;
-      margin-bottom: 1rem;
-    }
-    .sub-heading {
-      color: #555;
-      margin-bottom: 2rem;
-      text-align: center;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-    }
-    section {
-      margin-top: 2.5rem;
-      animation: fadeInSection 2s ease forwards;
-    }
-    @keyframes fadeInSection {
-      from {opacity: 0; transform: translateX(-15px);}
-      to {opacity: 1; transform: translateX(0);}
-    }
-    section:hover h2 {
-      color: #007acc;
-    }
-    ul {
-      padding-left: 1.5rem;
-      line-height: 1.5;
-    }
-    li {
-      margin-bottom: 0.6rem;
-    }
-    .contact p {
-      margin: 0.3rem 0;
-      text-align: center;
-      font-size: 1rem;
-    }
-    .label {
-      font-weight: 600;
-      color: #444;
-    }
-    .download-link {
-      text-align: center;
-      margin-top: 1rem;
-      font-weight: 600;
-    }
-    .download-link a {
-      color: #007acc;
-      text-decoration: none;
-      font-size: 1.1rem;
-      transition: color 0.3s ease;
-    }
-    .download-link a:hover {
-      text-decoration: underline;
-      color: #005a9e;
-    }
-    /* Skill Bars */
-    .skill-bar {
-      margin-bottom: 1rem;
-    }
-    .skill-name {
-      font-weight: 600;
-      margin-bottom: 0.3rem;
-      color: #2c3e50;
-    }
-    .bar-bg {
-      background-color: #e0e0e0;
-      border-radius: 25px;
-      height: 20px;
-      width: 100%;
-      overflow: hidden;
-    }
-    .bar-fill {
-      background-color: #007acc;
-      height: 100%;
-      width: 0;
-      border-radius: 25px 0 0 25px;
-      animation: fillBar 2s forwards;
-    }
-    @keyframes fillBar {
-      to { width: var(--fill-width); }
-    }
-    @media (max-width: 600px) {
-      .container {
-        padding: 1.5rem 1.5rem;
-        margin: 1rem;
-      }
-      h1 {
-        font-size: 1.8rem;
-      }
-      img.profile-pic {
-        width: 120px;
-        height: 120px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Devesh Rattan - DevOps Engineer Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+          font-family: 'Roboto', sans-serif;
+          margin: 0; padding: 0;
+          background: #f9f9f9;
+          color: #333;
+          animation: fadeInBody 1s ease forwards;
+        }
+        @keyframes fadeInBody {
+          from {opacity: 0;}
+          to {opacity: 1;}
+        }
+        .container {
+          max-width: 900px;
+          margin: 2rem auto;
+          background: #fff;
+          padding: 2rem 3rem;
+          border-radius: 12px;
+          box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+          animation: fadeInContainer 1.5s ease forwards;
+        }
+        @keyframes fadeInContainer {
+          from {transform: translateY(20px); opacity: 0;}
+          to {transform: translateY(0); opacity: 1;}
+        }
+        img.profile-pic {
+          width: 160px;
+          height: 160px;
+          border-radius: 50%;
+          object-fit: contain;
+          background: #fff;
+          margin-bottom: 2rem;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        img.profile-pic:hover {
+          transform: scale(1.05);
+          box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+        h1, h2, h3 {
+          color: #2c3e50;
+          transition: color 0.3s ease;
+          cursor: default;
+        }
+        h1 {
+          font-size: 2.4rem;
+          margin-bottom: 0.25rem;
+          text-align: center;
+        }
+        h2 {
+          border-bottom: 2px solid #007acc;
+          padding-bottom: 0.2rem;
+          margin-bottom: 1rem;
+        }
+        .sub-heading {
+          color: #555;
+          margin-bottom: 2rem;
+          text-align: center;
+          font-weight: 500;
+          letter-spacing: 0.04em;
+        }
+        section {
+          margin-top: 2.5rem;
+          animation: fadeInSection 2s ease forwards;
+        }
+        @keyframes fadeInSection {
+          from {opacity: 0; transform: translateX(-15px);}
+          to {opacity: 1; transform: translateX(0);}
+        }
+        section:hover h2 {
+          color: #007acc;
+        }
+        ul {
+          padding-left: 1.5rem;
+          line-height: 1.5;
+        }
+        li {
+          margin-bottom: 0.6rem;
+        }
+        .contact p {
+          margin: 0.3rem 0;
+          text-align: center;
+          font-size: 1rem;
+        }
+        .label {
+          font-weight: 600;
+          color: #444;
+        }
+        .download-link {
+          text-align: center;
+          margin-top: 1rem;
+          font-weight: 600;
+        }
+        .download-link a {
+          color: #007acc;
+          text-decoration: none;
+          font-size: 1.1rem;
+          transition: color 0.3s ease;
+        }
+        .download-link a:hover {
+          text-decoration: underline;
+          color: #005a9e;
+        }
+        @media (max-width: 600px) {
+          .container {
+            padding: 1.5rem 1.5rem;
+            margin: 1rem;
+          }
+          h1 {
+            font-size: 1.8rem;
+          }
+          img.profile-pic {
+            width: 120px;
+            height: 120px;
+          }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img src="./data/Devesh.png" alt="Profile picture of Devesh Rattan" class="profile-pic" />
+<div class="container">
+    <img src="./data/Devesh.png" alt="Profile picture of Devesh Rattan" class="profile-pic"/>
     <h1>Devesh Rattan</h1>
     <p class="sub-heading">Senior Associate Consultant | DevOps Engineer</p>
 
     <div class="contact">
-      <p><span class="label">Phone:</span> +91-9205136575</p>
-      <p><span class="label">Email:</span> devesh.rattan97@gmail.com</p>
-      <p><span class="label">Location:</span> New Delhi, India</p>
-      <p><span class="label">LinkedIn:</span> <a href="https://linkedin.com/in/deveshrattan" target="_blank" rel="noopener noreferrer">linkedin.com/in/deveshrattan</a></p>
+        <p><span class="label">Phone:</span> +91-9205136575</p>
+        <p><span class="label">Email:</span> devesh.rattan97@gmail.com</p>
+        <p><span class="label">Location:</span> New Delhi, India</p>
+        <p><span class="label">LinkedIn:</span> <a href="https://linkedin.com/in/deveshrattan" target="_blank"
+                                                   rel="noopener noreferrer">linkedin.com/in/deveshrattan</a></p>
     </div>
 
     <div class="download-link">
-      <a href="./data/Devesh_Resume.pdf" download>📄 Download PDF Resume</a>
+        <a href="./data/Devesh_Resume.pdf" download>📄 Download PDF Resume</a>
     </div>
 
     <section>
-      <h2>Profile Summary</h2>
-      <p>6+ years of experience in CI/CD pipeline design, infrastructure automation, and software delivery improvement. Skilled in Terraform, Jenkins, Docker, AWS, and Kubernetes. Known for collaborative teamwork and reliable outcomes.</p>
+        <h2>Profile Summary</h2>
+        <p>6+ years of experience in CI/CD pipeline design, infrastructure automation, and software delivery
+            improvement. Skilled in Terraform, Jenkins, Docker, AWS, and Kubernetes. Known for collaborative teamwork
+            and reliable outcomes.</p>
     </section>
 
     <section>
-      <h2>Skills</h2>
-      <div class="skill-bar">
-        <div class="skill-name">Terraform</div>
-        <div class="bar-bg">
-          <div class="bar-fill" style="--fill-width: 85%; width: 85%;"></div>
-        </div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-name">Docker</div>
-        <div class="bar-bg">
-          <div class="bar-fill" style="--fill-width: 90%; width: 90%;"></div>
-        </div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-name">Jenkins</div>
-        <div class="bar-bg">
-          <div class="bar-fill" style="--fill-width: 80%; width: 80%;"></div>
-        </div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-name">AWS</div>
-        <div class="bar-bg">
-          <div class="bar-fill" style="--fill-width: 85%; width: 85%;"></div>
-        </div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-name">Kubernetes</div>
-        <div class="bar-bg">
-          <div class="bar-fill" style="--fill-width: 75%; width: 75%;"></div>
-        </div>
-      </div>
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>DevOps Tools:</strong> Jenkins, GitHub, GitLab CI, ArgoCD, Terraform, Ansible, Puppet</li>
+            <li><strong>Cloud:</strong> AWS (EC2, S3, RDS, IAM, etc.), GCP</li>
+            <li><strong>Containers/Orchestration:</strong> Docker, Kubernetes</li>
+            <li><strong>Monitoring:</strong> Grafana, Prometheus, ThousandEyes, AppDynamics, Zabbix, Sensu</li>
+            <li><strong>Security:</strong> IAM, OWASP, Firewalls, IPTABLES, Fail2ban</li>
+            <li><strong>Languages:</strong> Python, Shell, PHP, Java</li>
+        </ul>
     </section>
 
     <section>
-      <h2>Work Experience</h2>
-      <h3>Senior Associate Consultant – Infosys (Apr 2022 - Present)</h3>
-      <ul>
-        <li>Managed services like Cassandra, Kafka, ElasticSearch, IAM, Docker, and Kubernetes.</li>
-        <li>Infrastructure and automation with Terraform, Ansible, Puppet, Jenkins.</li>
-        <li>Monitoring with Grafana, Prometheus, Sensu, PagerDuty.</li>
-        <li>Managed GitHub repos and Kubernetes using ArgoCD.</li>
-        <li>Task tracking via Jira and ServiceNow.</li>
-      </ul>
+        <h2>Work Experience</h2>
+        <h3>Senior Associate Consultant – Infosys (Apr 2022 - Present)</h3>
+        <ul>
+            <li>Managed services like Cassandra, Kafka, ElasticSearch, IAM, Docker, and Kubernetes.</li>
+            <li>Infrastructure and automation with Terraform, Ansible, Puppet, Jenkins.</li>
+            <li>Monitoring with Grafana, Prometheus, Sensu, PagerDuty.</li>
+            <li>Managed GitHub repos and Kubernetes using ArgoCD.</li>
+            <li>Task tracking via Jira and ServiceNow.</li>
+        </ul>
 
-      <h3>DevOps Specialist – OpsTree Solutions (Sep 2021 - Feb 2022)</h3>
-      <ul>
-        <li>Automated infrastructure with Terraform and Ansible.</li>
-        <li>CI/CD pipeline optimization with Jenkins and GitLab.</li>
-        <li>Monitoring with Grafana, Nagios, Sensu.</li>
-        <li>Security tool integration and scripting automation.</li>
-      </ul>
+        <h3>DevOps Specialist – OpsTree Solutions (Sep 2021 - Feb 2022)</h3>
+        <ul>
+            <li>Automated infrastructure with Terraform and Ansible.</li>
+            <li>CI/CD pipeline optimization with Jenkins and GitLab.</li>
+            <li>Monitoring with Grafana, Nagios, Sensu.</li>
+            <li>Security tool integration and scripting automation.</li>
+        </ul>
 
-      <h3>Linux Administrator – ACS Group (Feb 2019 - Sep 2021)</h3>
-      <ul>
-        <li>Managed AWS infrastructure and services.</li>
-        <li>Used Terraform and Ansible for infrastructure.</li>
-        <li>Docker-based microservice management and monitoring.</li>
-        <li>Setup VPNs, Proxy Servers, managed mail/chat services.</li>
-        <li>Led R&D efforts for client projects.</li>
-      </ul>
+        <h3>Linux Administrator – ACS Group (Feb 2019 - Sep 2021)</h3>
+        <ul>
+            <li>Managed AWS infrastructure and services.</li>
+            <li>Used Terraform and Ansible for infrastructure.</li>
+            <li>Docker-based microservice management and monitoring.</li>
+            <li>Setup VPNs, Proxy Servers, managed mail/chat services.</li>
+            <li>Led R&D efforts for client projects.</li>
+        </ul>
     </section>
 
     <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Face Recognition App:</strong> Android Studio app using advanced facial recognition.</li>
-        <li><strong>Puzzle Game:</strong> Picture puzzle app developed in .NET.</li>
-        <li><strong>Solar Water Heater:</strong> Functional solar-powered water heater prototype.</li>
-      </ul>
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Face Recognition App:</strong> Android Studio app using advanced facial recognition.</li>
+            <li><strong>Puzzle Game:</strong> Picture puzzle app developed in .NET.</li>
+            <li><strong>Solar Water Heater:</strong> Functional solar-powered water heater prototype.</li>
+        </ul>
     </section>
 
     <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>B.Tech/B.E. – CSE:</strong> GJUST, Hisar – 7.1/10 (2018)</li>
-        <li><strong>Diploma:</strong> Om Institute of Polytechnic – 72% (2015)</li>
-        <li><strong>10th:</strong> Haryana – 92% (2012)</li>
-      </ul>
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.Tech/B.E. – CSE:</strong> GJUST, Hisar – 7.1/10 (2018)</li>
+            <li><strong>Diploma:</strong> Om Institute of Polytechnic – 72% (2015)</li>
+            <li><strong>10th:</strong> Haryana – 92% (2012)</li>
+        </ul>
     </section>
 
     <section>
-      <h2>Additional Information</h2>
-      <ul>
-        <li>Languages: Hindi, English</li>
-        <li>Completed ethical hacking course on Udemy</li>
-        <li>Interest in DevSecOps, space exploration</li>
-      </ul>
+        <h2>Additional Information</h2>
+        <ul>
+            <li>Languages: Hindi, English</li>
+            <li>Completed ethical hacking course on Udemy</li>
+            <li>Interest in DevSecOps, space exploration</li>
+        </ul>
     </section>
-  </div>
+</div>
 </body>
 </html>
