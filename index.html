@@ -111,6 +111,32 @@
       text-decoration: underline;
       color: #005a9e;
     }
+    /* Skill Bars */
+    .skill-bar {
+      margin-bottom: 1rem;
+    }
+    .skill-name {
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      color: #2c3e50;
+    }
+    .bar-bg {
+      background-color: #e0e0e0;
+      border-radius: 25px;
+      height: 20px;
+      width: 100%;
+      overflow: hidden;
+    }
+    .bar-fill {
+      background-color: #007acc;
+      height: 100%;
+      width: 0;
+      border-radius: 25px 0 0 25px;
+      animation: fillBar 2s forwards;
+    }
+    @keyframes fillBar {
+      to { width: var(--fill-width); }
+    }
     @media (max-width: 600px) {
       .container {
         padding: 1.5rem 1.5rem;
@@ -150,14 +176,36 @@
 
     <section>
       <h2>Skills</h2>
-      <ul>
-        <li><strong>DevOps Tools:</strong> Jenkins, GitHub, GitLab CI, ArgoCD, Terraform, Ansible, Puppet</li>
-        <li><strong>Cloud:</strong> AWS (EC2, S3, RDS, IAM, etc.), GCP</li>
-        <li><strong>Containers/Orchestration:</strong> Docker, Kubernetes</li>
-        <li><strong>Monitoring:</strong> Grafana, Prometheus, ThousandEyes, AppDynamics, Zabbix, Sensu</li>
-        <li><strong>Security:</strong> IAM, OWASP, Firewalls, IPTABLES, Fail2ban</li>
-        <li><strong>Languages:</strong> Python, Shell, PHP, Java</li>
-      </ul>
+      <div class="skill-bar">
+        <div class="skill-name">Terraform</div>
+        <div class="bar-bg">
+          <div class="bar-fill" style="--fill-width: 85%; width: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name">Docker</div>
+        <div class="bar-bg">
+          <div class="bar-fill" style="--fill-width: 90%; width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name">Jenkins</div>
+        <div class="bar-bg">
+          <div class="bar-fill" style="--fill-width: 80%; width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name">AWS</div>
+        <div class="bar-bg">
+          <div class="bar-fill" style="--fill-width: 85%; width: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name">Kubernetes</div>
+        <div class="bar-bg">
+          <div class="bar-fill" style="--fill-width: 75%; width: 75%;"></div>
+        </div>
+      </div>
     </section>
 
     <section>
