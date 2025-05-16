@@ -36,7 +36,7 @@
       border-radius: 50%;
       object-fit: contain;
       background: #fff;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       display: block;
@@ -56,6 +56,11 @@
       font-size: 2.4rem;
       margin-bottom: 0.25rem;
       text-align: center;
+    }
+    h2 {
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 0.2rem;
+      margin-bottom: 1rem;
     }
     .sub-heading {
       color: #555;
@@ -91,8 +96,21 @@
       font-weight: 600;
       color: #444;
     }
-
-    /* Responsive */
+    .download-link {
+      text-align: center;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    .download-link a {
+      color: #007acc;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    .download-link a:hover {
+      text-decoration: underline;
+      color: #005a9e;
+    }
     @media (max-width: 600px) {
       .container {
         padding: 1.5rem 1.5rem;
@@ -110,7 +128,7 @@
 </head>
 <body>
   <div class="container">
-    <img src="./Devesh.png" alt="Devesh Rattan" class="profile-pic" />
+    <img src="./Devesh.png" alt="Profile picture of Devesh Rattan" class="profile-pic" />
     <h1>Devesh Rattan</h1>
     <p class="sub-heading">Senior Associate Consultant | DevOps Engineer</p>
 
@@ -119,6 +137,10 @@
       <p><span class="label">Email:</span> devesh.rattan97@gmail.com</p>
       <p><span class="label">Location:</span> New Delhi, India</p>
       <p><span class="label">LinkedIn:</span> <a href="https://linkedin.com/in/deveshrattan" target="_blank" rel="noopener noreferrer">linkedin.com/in/deveshrattan</a></p>
+    </div>
+
+    <div class="download-link">
+      <a href="./Devesh_Resume.pdf" download>📄 Download PDF Resume</a>
     </div>
 
     <section>
